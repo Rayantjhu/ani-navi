@@ -1,0 +1,5 @@
+# JetBrains IDE configurations
+.idea/
+
+# Rust build files
+/target
