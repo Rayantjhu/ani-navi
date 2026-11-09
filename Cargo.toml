@@ -5,3 +5,14 @@ edition = "2024"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
+keyring = { version = "4.2.0", features = ["v1"] }
+oauth2 = { default-features = false, version = "5.0.0", features = ["pkce-plain", "reqwest"] }
+open = "5.4.5"
+# oauth2 uses this specific reqwest version and not the latest.
+reqwest = { version = "0.12.28" }
+serde_json = "1.0.154"
+serde = { version = "1.0.229", features = ["derive"] }
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "macros", "net", "io-util", "time"] }
+
+[dev-dependencies]
+wiremock = "0.6.5"
